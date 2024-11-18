@@ -1,0 +1,206 @@
+:root {
+    --primary-color: #ffdda1;
+    --secondary-color: #d0d2d5;
+    --tertiary-color: #d0d2d5;
+    --accent-color: #d0d2d5;
+    --button-hover-color: #d0d2d5;
+    --form-background: #d1d1d1;
+    --text-color: #000000;
+    --text-dark: #333;
+    --button-color: green;
+    --button-hover: darkgreen;
+}
+
+body {
+    margin: 0;
+    font-family: "Crimson Text", serif;
+    color: var(--text-dark);
+    background-color: var(--tertiary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.header {
+    position: relative;
+    background-color: var(--secondary-color);
+    padding-bottom: 40vh;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-enl {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-enl a {
+    color: var(--text-color);
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.nav-enl a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    border-radius: 10px;
+    justify-content: center;
+    margin: 10px 30px;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.contentido-principal {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.destacados h2 {
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.galeria-item {
+    text-align: center;
+    background-color: #c9c4c4;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+form {
+    background-color: var(--form-background);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 92%;
+}
+
+form button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: inherit;
+    padding: 10px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: var(--button-hover);
+}
+
+.interior {
+    text-align: center;
+    padding: 0 30px;
+}
+
+i {
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+}
